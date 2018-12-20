@@ -282,85 +282,7 @@ header{
 	background: rgb(64, 61, 71);
 	
  }
- /* ---------------------------------------------------------CNAV */
- #cnav{
-	display:none;
-	position: -webkit-sticky;
-	position: sticky;
-	height: 40px;
-	top: 0;
-	align-items: center;
-	justify-content:center;
-	background-image: linear-gradient(-90deg,rgb(120, 42, 245),rgb(32, 62, 161));	
-	transition: all .2s ease-in-out;
-	z-index: 99;
-	width: 100%;
-}
-.cnav-inner{
-	display: block;
-}
-.cnav-inner div{
-	width: 30px;
-	height: 5px;
-	margin: 2px;
-	border-radius: 10px;
-	background: rgb(255, 255, 255);
-}
-.cnav-list {
-	position: fixed;
-	top:0;
-	left:0;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center	;
-	z-index: 120;
-	background-image: linear-gradient(-90deg,rgb(120, 42, 245),rgb(32, 62, 161));	
-	transform: scale(1,0.5);
-	opacity: 0;
-	transition: all ease-in-out 1s;
-	transform-origin: bottom;
-}
-
-
-.cnav-list:target{
-	transform: scale(1,1);
-	opacity: 1;
-	transform-origin: top;
-}
-
-.cnav-list ul{
-	height: auto;
-	text-align: center;
-	font-size: 2rem;
-	list-style: none;
-}
-
-
-
-.cnav-list a{
-	display: block;
-	padding: 10px;
-	margin: 30px 0px;
-	color: rgba(255, 255, 255, 0.733);
-	text-decoration: none;
-	transition: all .4s;
-}
-.cnav-list a:active{
-	font-size: 1.5rem;
-	background: rgb(52, 40, 87);
-	
-
-}
-
-#cnav-close{
-	border: 1px solid rgb(255, 255, 255);
-	position: absolute;
-	top:50px;
-	right: 50px;
-
-}
+ 
 
 
 
@@ -632,9 +554,9 @@ footer{
 
 @media screen and (max-width: 800px){
 
-	/* #cnav{
+	#cnav{
 		display: none;
-	} */
+	}
 		
 	body{
 		max-width: 768px;
@@ -861,9 +783,7 @@ footer{
 	}
 
 
-	#cnav{
-		display:flex;
-	 }
+	
 	
 	.name-container{
 		background-color:rgba(34, 137, 233, 0);
@@ -1020,7 +940,85 @@ footer{
 		flex:1;	
 		margin: 0;
 	}
+/* ---------------------------------------------------------CNAV */
+#cnav{
+	display:flex;
+	position: sticky;
+	position: sticky;
+	height: 40px;
+	top: 0;
+	align-items: center;
+	justify-content:center;
+	background-image: linear-gradient(-90deg,rgb(120, 42, 245),rgb(32, 62, 161));	
+	transition: all .2s ease-in-out;
+	z-index: 99;
+	width: 100%;
+}
+.cnav-inner{
+	display: block;
+}
+.cnav-inner div{
+	width: 30px;
+	height: 5px;
+	margin: 2px;
+	border-radius: 10px;
+	background: rgb(255, 255, 255);
+}
+.cnav-list {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center	;
+	z-index: 120;
+	background-image: linear-gradient(-90deg,rgb(120, 42, 245),rgb(32, 62, 161));	
+	transform: scale(1,0.5);
+	opacity: 0;
+	transition: all ease-in-out 1s;
+	transform-origin: bottom;
+}
 
+
+.cnav-list:target{
+	transform: scale(1,1);
+	opacity: 1;
+	transform-origin: top;
+}
+
+.cnav-list ul{
+	height: auto;
+	text-align: center;
+	font-size: 2rem;
+	list-style: none;
+}
+
+
+
+.cnav-list a{
+	display: block;
+	padding: 10px;
+	margin: 30px 0px;
+	color: rgba(255, 255, 255, 0.733);
+	text-decoration: none;
+	transition: all .4s;
+}
+.cnav-list a:active{
+	font-size: 1.5rem;
+	background: rgb(52, 40, 87);
+	
+
+}
+
+#cnav-close{
+	border: 1px solid rgb(255, 255, 255);
+	position: absolute;
+	top:50px;
+	right: 50px;
+
+}
 
 
 
