@@ -237,7 +237,6 @@ header{
 #bnav{
 	/* border: 5px solid #ff0000; */
 	position: sticky;
-	-webkit-position: sticky;
 	top: 0;
 	left: 0;
 	display: flex;
@@ -286,6 +285,7 @@ header{
  /* ---------------------------------------------------------CNAV */
  #cnav{
 	display:none;
+	position: -webkit-sticky;
 	position: sticky;
 	height: 40px;
 	top: 0;
