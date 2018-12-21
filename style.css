@@ -1015,10 +1015,8 @@ footer{
 }
 
 #bnav{
-	position: -webkit-sticky;
+	position: -webkit-sticky;	
 	position: sticky;
-	position: -webkit- -webkit-sticky;
-	position: -webkit- sticky;
 	top: 40px;
 	left: 0;
 	display: -webkit-box;
