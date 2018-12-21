@@ -854,23 +854,41 @@ footer{
 }
 
 .cnav-wrap{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
 	border: 1px solid #000;
 	position: fixed;
 	display:flex;
-	flex-flow: column wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column wrap;
+	        flex-flow: column wrap;
 	top:0;;
 	left:0;
 	width: 100vw;
 	height: 100vh;
-	justify-content: center;
-	align-items: center	;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center	;
+	-ms-flex-align: center	;
+	        align-items: center	;
 	z-index: 120;
+	background-image: -webkit-gradient(linear,right top, left top,from(rgb(120, 42, 245)),to(rgb(32, 62, 161)));
+	background-image: -webkit-linear-gradient(right,rgb(120, 42, 245),rgb(32, 62, 161));
+	background-image: -o-linear-gradient(right,rgb(120, 42, 245),rgb(32, 62, 161));
 	background-image: linear-gradient(-90deg,rgb(120, 42, 245),rgb(32, 62, 161));	
-	transform: scale(0,0);
+	-webkit-transform: scale(0,0);	
+	-ms-transform: scale(0,0);	
+	        transform: scale(0,0);
 	opacity: 0;
+	-webkit-transition: all ease-in-out .2s;
+	-o-transition: all ease-in-out .2s;
 	transition: all ease-in-out .2s;
-	transform-origin: bottom;
+	-webkit-transform-origin: bottom;
+	-ms-transform-origin: bottom;
+	        transform-origin: bottom;
 }
 
 
@@ -997,22 +1015,31 @@ footer{
 }
 
 #bnav{
-	/* border: 5px solid #ff0000; */
+	position: -webkit-sticky;
 	position: sticky;
+	position: -webkit- -webkit-sticky;
 	position: -webkit- sticky;
 	top: 40px;
 	left: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row nowrap ;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row nowrap ;
+	        flex-flow: row nowrap ;
 	line-height: 30px!important;
 	font-size: .5rem!important;;
 	text-align: center;
-	justify-content:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	        justify-content:center;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 	z-index: 98;
 }
 .sticky{
-	/* border: 1px solid rgb(0, 204, 255); */
 	min-width: auto!important;
 	display: block!important;
 	font-weight: 100px;
@@ -1025,16 +1052,22 @@ footer{
 	white-space: nowrap;
 	font-weight: 100;
 	text-decoration: none;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
 	transition: all .4s;
 	width: auto;
 }
 #bnav :hover {
 	background: rgb(228, 228, 228);
 	color: rgb(29, 27, 32);
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
 	transition: all .2s;
 	 }
 .active {
-	 background: rgb(29, 28, 31);
+	background: rgb(29, 28, 31);
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
 	transition: all .2s;
  }
  #bnav .active  a{
