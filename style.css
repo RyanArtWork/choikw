@@ -665,10 +665,12 @@ footer{
 		    flex:4;
 	}
 	.name-container{
+		width: auto;
 		background-color:rgba(34, 137, 233, 0);
 		-webkit-animation:name-bg 1s forwards;
 		        animation:name-bg 1s forwards;
 	}
+
 	
 	@keyframes name-bg{
 		0%{background-color:rgb(160, 34, 233);width: 0px;}
