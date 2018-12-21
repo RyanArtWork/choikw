@@ -840,10 +840,13 @@ footer{
 	border-radius: 10px;
 	background: rgb(255, 255, 255);
 }
-.cnav-list {
+
+.cnav-wrap{
+	display:flex;
+	border: 1px solid #000;
 	position: fixed;
 	display:flex;
-	flex-flow: column-reverse wrap;
+	flex-flow: column wrap;
 	top:0;;
 	left:0;
 	width: 100vw;
@@ -857,27 +860,39 @@ footer{
 	transition: all ease-in-out .2s;
 	transform-origin: bottom;
 }
-.contact a{
 
 
-	padding: 20px!important;
-	margin: 0!important;
-	
+.contact{
+	width: 100%;
 	
 }
-
 .contact ul{
-	display:grid;
-	grid-template-rows: repeat(1,1fr)!important;
+	display:flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1.5rem;
+	list-style: none;
+	width: 100%;
+	margin: 30px 0 0 0;
+
 }
-.cnav-list:target{
+.contact a{
+	
+	padding: 20px;
+	margin: 10px;
+}
+.cnav-wrap:target{
 	transform: scale(1,1);
 	opacity: 1;
 	transform-origin: bottom;
-	
-	
 }
+.cnav-list{
+	display: flex;
+	width: 100%;
 
+}
 .cnav-list ul{
 	display:grid;
 	grid-template-columns: repeat(2,1fr);
@@ -887,7 +902,6 @@ footer{
 	list-style: none;
 	width: 100%;
 	margin: 5px;
-
 }
 .cnav-list a{
 	display: block;
@@ -900,8 +914,6 @@ footer{
 .cnav-list a:active{
 	font-size: 1.5rem;
 	background: rgb(52, 40, 87);
-	
-
 }
 
 #cnav-close{
@@ -910,7 +922,14 @@ footer{
 	position: absolute;
 	top:5%;
 	left: 5%;
-	padding: 20px 10px;
+	padding: 20px 20px;
+	margin: 0;
+	text-decoration: none;
+	color: #fff;
+	
+}
+#cnav-close>a{
+	
 
 }
 #article{
