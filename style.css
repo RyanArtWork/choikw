@@ -118,16 +118,22 @@ header{
 }
 
 .name-container{
-	background-color:rgba(34, 137, 233, 0);
-	animation:name-bg 1s forwards 2s;
 	width: auto;
+	background-color:rgba(34, 137, 233, 0);
+	-webkit-animation:name-bg 1s forwards;
+			animation:name-bg 1s forwards;
 }
+
 
 @keyframes name-bg{
 	0%{background-color:rgb(160, 34, 233);width: 0px;}
-	100%{background-color:rgb(34, 137, 233);width: 400px;}
-
+	100%{border-bottom: 1px solid rgb(142, 88, 230);;width: 70%;}
 }
+@-webkit-keyframes name-bg{
+	0%{background-color:rgb(160, 34, 233);width: 0px;}
+	100%{border-bottom: 1px solid rgb(142, 88, 230);;width: 70%;}
+}
+
 
 .name-container p{
 	font-family: 'Montserrat', sans-serif;
