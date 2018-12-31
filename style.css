@@ -9,7 +9,7 @@
 
 img{
 	max-width: 100%;
-	background-size: cover;
+	
 }
 p{
 	line-height: 1.5em;
@@ -295,14 +295,18 @@ header{
 	background-color:rgb(25, 29, 41);
 	justify-content:center;
 	transition: all .2s ease-in-out;
+	border: 1px solid rgb(247, 7, 7);
 	z-index: 98;
+
 
 }
 .sticky{
-	min-width: 100%;
+	border: 1px solid rgb(247, 7, 7);
+	width: 200px;
+
 	display: block;
 	font-weight: 100;
-	min-width: 300px;
+	
 	color: rgb(255, 255, 255);
 }
 #bnav  a{
@@ -521,20 +525,30 @@ header{
 
 
 /* ----------------Portfolio */
-
-.portfolio-whole{
+main{
+	margin: 50px ;
+}
+#ui-section>.portfolio-whole{
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	margin-bottom: 200px ;
+	border: 1px solid rgb(255, 15, 15);
+}
+#illus-section>.portfolio-whole{
+	display: flex;
+	flex-flow: row nowrap;
+	margin-bottom: 200px ;
+	border: 1px solid rgb(255, 15, 15);
 }
 
-#gameart1>.portfolio-whole{
+#gameart-section>.portfolio-whole{
 	display: flex;
-	flex-flow: row-reverse;
+	flex-flow: row-reverse nowrap;
 	margin-bottom: 200px ;
 }
 
 #community-section>.portfolio-whole{
+	border: 1px solid rgb(255, 2, 2);
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -543,15 +557,15 @@ header{
 #community-section .portfolio{
 	display:grid;
 	grid-template-columns: repeat(3,1fr);
-	flex:1;	
+	flex:3;	
 }
+
 #community-section #article{
 	display: flex;
 	flex-flow: column wrap;
 	text-align: center;
-
-
 }
+
 #community-section .btn-wrapper {
 	display: flex;
 	justify-content: center;
@@ -561,17 +575,13 @@ header{
 }
 	
 #community-section .message-btn {
-
 	font: 1rem;
 	border-radius: 5px;
 	color: rgb(31, 31, 61);
 	background: rgb(91, 217, 255);
 	box-shadow:  0px 5px 30px 0 rgb(53, 232, 245);
 	font-weight: 400;
-	margin: 50px;
-
-
-	
+	margin: 50px;	
 }
 .portfolio-inner{
 	position: fixed;
@@ -584,17 +594,18 @@ header{
 	align-items: center	;
 	z-index: 99;
 	background-color: rgba(255, 255, 255, 0.897);
-	transform: scale(0,0);
+	transform: scale(1,0);
 	opacity: 0;
-	transition: all ease-in-out .4s;
+	transition: all ease-in-out .3s;
 	transform-origin: center;
 }
 
 .portfolio-inner:target{
 	transform: scale(1,1);
 	opacity: 1;
-	transform-origin: bottom;
+	transform-origin: center;
 }
+
 .img-text{
 	position: absolute;
 	bottom:15%;
@@ -609,13 +620,18 @@ header{
 .portfolio{
 	display:grid;
 	grid-template-columns: repeat(2,1fr);
-	flex:1;	
-	margin: 5px;
+
+	flex:90%;		
+	border: 1px solid rgb(0, 68, 255);
 }
 
-.portfolio-image{	
-	transform: scale(1,1);
-   }
+
+
+.portfolio img{
+	width: 620px;
+	height: 200px;
+	object-fit:cover;
+}
 
 .portfolio-image :hover{
 	opacity: .9;
@@ -629,12 +645,13 @@ header{
    }
 
 #article{
+	border: 1px solid rgb(0, 238, 99);
 	color: rgb(101, 108, 207);
 	display: block;
 	flex-flow: column;
 	align-items: center;
 	margin: 50px;
-	flex:1;
+	flex:30%;
 }
 
 #small-word{ 
@@ -686,20 +703,28 @@ header{
 }
 #about{
 	display: block;
+	margin: 0;
+
 }
 #about-container{
+	border: 1px solid #000;
 	padding: 100px 0 0 0;
+	margin: 0;
 	display: flex;
 	flex-flow: column nowrap; 
 	justify-content: center;
 	align-items: center;
 	background-image: linear-gradient(-90deg,rgb(120, 42, 245),rgb(32, 62, 161));	
 }
+#about-pic {
+	display: flex;
+
+	justify-content: center;
+
+}
 #about-pic img{
-	flex:1;
-	border-radius: 100%;
-	width: 300px;
-	height: 300px;
+	width: 50%;
+	height: 50%;
 }
 
 #about-list{
@@ -729,7 +754,6 @@ header{
 
 footer{
 	color: #ffffff;
-
 	padding: 50px;
 	text-align: center;
 	background-image: linear-gradient(-90deg,rgb(49, 60, 165), rgb(36, 30, 48));
@@ -738,6 +762,7 @@ footer{
 	bottom: 0;
 	font-size: 0.7rem;
 	font-weight: 300;
+
 }
 
 
@@ -746,9 +771,9 @@ footer{
 
 @media screen and (max-width:1024px){
 	.sticky{
-		min-width: 200px;
-		display: block!important;
-		padding: 0 50px;
+		width: 150px;
+	
+		padding: 0 20px;
 
 	}
 
@@ -759,10 +784,8 @@ footer{
 
 @media screen and (max-width:800px){
 	.sticky{
-	
-			min-width: auto!important;
-			display: block!important;
-			padding: 0 30px;
+		width: 100px;
+		padding: 0 20px;
 	
 		}
 	
@@ -770,15 +793,6 @@ footer{
 
 
 }
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width:600px){
