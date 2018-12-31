@@ -513,13 +513,12 @@ header{
 
 #intro{
 	display: flex;
-	margin: 200px 20em 0 200px ;
+	margin: 200px 20% 0 20% ;
 	text-align: center;
 	min-width: 200px;
-
 	color: rgb(95, 99, 141);
 	text-align: start;
-	border-left: 2px solid rgb(120, 42, 245);
+	border: 2px solid rgb(120, 42, 245);
 }
 
 
@@ -570,16 +569,17 @@ main{
 	flex-flow: column wrap;
 	text-align: center;
 }
-
-
 	
 #community-section .message-btn {
-	font: 1rem;
+	font-size: 1rem;
 	border-radius: 5px;
 	color: rgb(31, 31, 61);
-	background: rgb(91, 217, 255);
+	background: rgb(53, 232, 245);
 	box-shadow:  0px 5px 30px 0 rgb(53, 232, 245);
 	font-weight: 400;
+	width: 50%;
+	display: block;
+	align-self: center
 }
 .portfolio-inner{
 	position: fixed;
@@ -622,8 +622,6 @@ main{
 	border: 3px solid rgb(0, 68, 255);
 }
 
-
-
 .portfolio img{
 	width: 620px;
 	height: 200px;
@@ -647,10 +645,12 @@ main{
 	display: block;
 	flex-flow: column;
 	align-items: center;
+	justify-content: right;
 	height: auto;
-	margin: 0 10px 0 0;
+	margin: 0 0 0 20px;
 	flex:30%;
 }
+
 
 #small-word{ 
 	font-size: 1.2rem;
@@ -677,12 +677,22 @@ main{
 .btn-wrapper{
     display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
+
     width: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
 }
+#community-section .btn-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+	border: 1px solid #000;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 .more-btn{
 	font: 1rem ;
 	background-color: rgb(93, 78, 221);
@@ -710,7 +720,7 @@ main{
 }
 #about{
 	display: block;
-	margin: 0;
+	margin-top: 200px;
 
 }
 #about-container{
@@ -769,6 +779,7 @@ footer{
 	bottom: 0;
 	font-size: 0.7rem;
 	font-weight: 300;
+
 
 }
 
@@ -1022,8 +1033,8 @@ footer{
     }	
 	.card-text{
 		font-size: 1.5rem;
-		
 	}
+	
 /* ----------------contact */
 
 .contact{
@@ -1056,23 +1067,49 @@ footer{
 main{
     margin: 0;
 }
+
 #article{
+	border: 3px solid rgb(0, 238, 99);
 	color: rgb(101, 108, 207);
-	display: flex;
-	flex:1;
-    padding: 20px;
+	display: block;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	margin: 0;
+	flex:0;
 }
+
+
 #ui-section>.portfolio-whole{
 	display: flex;
 	flex-flow: column wrap;
 }
+
 #ui-section .portfolio{
 	display:block;
 	flex:1;	
 	margin: 0;
 }
+#graphic-section>.portfolio-whole{
+	display: block;
+	flex-flow: column nowrap;
+	margin: 40px 0;
+}
+
+#gameart-section>.portfolio-whole{
+	display: block;
+	flex-flow: column wrap;
+	margin: 40px 0;
+}
+
+#illus-section>.portfolio-whole{
+	display: block;
+	flex-flow: column wrap;
+	margin: 40px 0;
+}
 #community-section>.portfolio-whole{
-	display: flex;
+	display: block;
 	flex-flow: column wrap;
 	margin: 0;
 }
@@ -1082,21 +1119,9 @@ main{
 	flex:1;	
 	margin: 0;
 }
-#gameart-section>.portfolio-whole{
-	display: flex;
-	flex-flow: column wrap;
-	margin: 10px 0;
-}
-
-#illus-section>.portfolio-whole{
-	display: flex;
-	flex-flow: column wrap;
-	margin: 40px 0;
-}
-
 .portfolio{
 	display:block;
-	flex:1;	
+
 	margin: 0;
 }
 
@@ -1110,21 +1135,15 @@ main{
 .btn-wrapper{
     display: flex;
     flex-flow: column nowrap;
-    border: 1px solid #000;
+	border: 1px solid #000;
+	justify-content:center;
+	align-items: center;
     width: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-#community-section .btn-wrapper {
-    display: flex;
-    flex-flow: column nowrap;
-    border: 1px solid #000;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+
 
 .more-btn{
     width: 100%;
