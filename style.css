@@ -616,8 +616,10 @@ main{
 }
 
 .close{
+	border: 1px solid #000;
 	position: absolute;
-	padding: 220px 400px;
+	width: 100vw;
+	height: 100vh;
 	background-color: rgba(255, 0, 0, 0);
 }
 
