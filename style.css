@@ -624,14 +624,15 @@ main{
 .portfolio{
 	display:grid;
 	grid-template-columns: repeat(2,1fr);
-	flex:70%;		
+	flex:70%;	
+	grid-gap: 0 5px ;
 }
 
 .portfolio img{
 	width: 620px;
 	height: 200px;
-    object-fit:cover;
-    border: 1px solid rgb(105, 105, 105);
+	object-fit:cover;
+
 }
 
 .portfolio-image :hover{
@@ -675,7 +676,13 @@ main{
 	word-wrap: break-word;
 	color: rgb(162, 145, 182);
 	padding: 0;
-	margin: 20 0 0 0;
+	margin: 20px 0 0 0;
+}
+
+.name-tag{
+	margin: 10px 0 0 0;
+	font-size: .5rem;
+	color: rgb(170, 161, 180)
 }
 .btn-wrapper{
     display: flex;
