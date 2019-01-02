@@ -1088,15 +1088,52 @@ footer{
 		-ms-flex-pack: center;
 				justify-content: center;
 		height: auto;
-		margin: 0;
+		margin: 50px;
+		-webkit-box-flex:0;
+		-ms-flex:0;
+				flex:0;
+	}
+	#gameart-section #article{
+		color: rgb(101, 108, 207);
+		display: block;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: column;
+				flex-flow: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+				align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+				justify-content: center;
+		height: auto;
+		margin: 50px;
+		-webkit-box-flex:0;
+		-ms-flex:0;
+				flex:0;
+	}
+	#graphic-section #article{
+		color: rgb(101, 108, 207);
+		display: block;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: column;
+				flex-flow: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+				align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+				justify-content: center;
+		height: auto;
+		margin: 50px;
 		-webkit-box-flex:0;
 		-ms-flex:0;
 				flex:0;
 	}
 	
-	
 	#ui-section>.portfolio-whole{
-		display: -webkit-box;
+		display: -webkit-flexbox;
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-orient: vertical;
@@ -1104,6 +1141,7 @@ footer{
 		-ms-flex-flow: column wrap;
 			flex-flow: column wrap;
 	}
+	
 	
 	#ui-section .portfolio{
 		display:block;
@@ -1114,35 +1152,43 @@ footer{
     }
   
 	#graphic-section>.portfolio-whole{
-		display: block;
-		flex-flow: column nowrap;
-		margin: 40px 0;
+		display: -webkit-flexbox;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: column wrap;
+			flex-flow: column wrap;
 	}
 	
 	#gameart-section>.portfolio-whole{
-		display: block;
+		display: -webkit-flexbox;
+		display: -ms-flexbox;
+		display: flex;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		-ms-flex-flow: column nowrap;
-			flex-flow: column nowrap;
-		margin: 40px 0;
+		-ms-flex-flow: column wrap;
+			flex-flow: column wrap;
 	}
 	
+	
 	#illus-section>.portfolio-whole{
-		display: block;
+		display: -webkit-flexbox;
+		display: -ms-flexbox;
+		display: flex;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		-ms-flex-flow: column nowrap;
-				flex-flow: column nowrap;
-		margin: 40px 0;
+		-ms-flex-flow: column wrap;
+			flex-flow: column wrap;
 	}
 	#community-section>.portfolio-whole{
-		display: block;
+		display: -webkit-flexbox;
+		display: -ms-flexbox;
+		display: flex;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		-ms-flex-flow: column nowrap;
-				flex-flow: column nowrap;
-		margin: 40px 0;
+		-ms-flex-flow: column wrap;
+			flex-flow: column wrap;
 	}
 	
 	#community-section .portfolio{
@@ -1171,6 +1217,7 @@ footer{
 		-webkit-box-direction: normal;
 		-ms-flex-flow: column wrap;
 				flex-flow: column wrap;
+				margin-top: 10px;
 	
 	}
 	.btn-wrapper{
@@ -1188,7 +1235,7 @@ footer{
 		-ms-flex-align: center;
 				align-items: center;
 		width: 100%;
-		margin: 0;
+		margin: 40px 0 0 0;
 		padding: 0;
 		text-align: center;
 	}
