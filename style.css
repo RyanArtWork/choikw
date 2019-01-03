@@ -152,18 +152,19 @@ header{
 	width: -moz-fit-content;
 	width: fit-content;
 	padding: 10px;
+	font-size: .5rem;
 	font-weight: 700;
-	margin: 35px 0 0 420px;
+	margin: 10px 0 0 420px;
 	-webkit-animation: hero-box .5s ease 1.5s forwards;
 			animation: hero-box .5s ease 1.5s forwards;
 }
 @keyframes hero-box{
 	0% {font-size:0rem;background:rgba(160, 34, 233, 0);color: #ffffff00; transform: scale(1,0)}
-	100% {font-size:1.5rem;background:rgb(107, 53, 179);color: #44a9ec;transform: scale(2,2);}
+	100% {font-size:1.5rem;background:rgb(107, 53, 179);color: #44a9ec;transform: scale(1,1);}
 }
 @-webkit-keyframes hero-box{
 	0% {font-size:0rem;background:rgba(160, 34, 233, 0);color: #ffffff00; transform: scale(1,0)}
-	100% {font-size:1.5rem;background:rgb(107, 53, 179);color: #44a9ec;transform: scale(2,2);}
+	100% {font-size:1.5rem;background:rgb(107, 53, 179);color: #44a9ec;transform: scale(1,1);}
 }
 
 .letter-1{
@@ -174,7 +175,7 @@ header{
 	background: rgb(28, 195, 236);
 	font-size: 3rem;
 	top:560px;
-	padding: 20px;
+	padding: 12px;
 	animation: hero-1 10s ease backwards infinite;
 	
 }
@@ -463,7 +464,7 @@ header{
 	z-index: 0;
 	min-width: 100px; 
 	transition: all 1s;
-	margin: 0 5px;
+
 	background-color: rgb(248, 245, 255);
 }
 [id$= -card]:hover{
@@ -511,11 +512,12 @@ header{
 
 #intro{
 	display: flex;
-	margin: 200px 20% 0 20% ;
+	margin: 100px 20% 0 20% ;
+	padding: 0 0 0 10px;
 	text-align: left;
 	min-width: 200px;
 	color: rgb(95, 99, 141);
-	border-left: 2px solid rgb(120, 42, 245);
+	border-left: 1px solid rgb(120, 42, 245);
 }
 
 /* ----------------Portfolio */
@@ -604,6 +606,11 @@ main{
 	transform-origin: center;
 }
 
+.portfolio-inner img{
+	width: 80%;
+
+}
+
 .portfolio-inner:target{
 	transform: scale(1,1);
 	opacity: 1;
@@ -687,10 +694,10 @@ main{
 	color: rgb(170, 161, 180)
 }
 .btn-wrapper{
-    display: flex;
+	    display: flex;
 	flex-flow: column nowrap;
     width: 100%;
-    margin: 0;
+    margin: 50px 0 0 0;
     padding: 0;
     text-align: center;
 }
@@ -803,7 +810,7 @@ footer{
 }
 
 
-/*-------------------------------------(MEDIA Qeucry) */
+/*-------------------------------------MEDIA Qeucry */
 
 
 @media screen and (max-width:1024px){
@@ -821,16 +828,6 @@ footer{
 		#anav ul{
 			display: none;
 		}	
-	
-		.title{
-			font-size: 1.2rem;
-			font-weight: 400;
-			margin: 30px 0 0 10px;
-			padding: 5px;
-			-webkit-box-flex:4;
-			-ms-flex:4;
-				flex:4;
-		}
 
 		.name-container{
 			width: auto;
@@ -853,7 +850,7 @@ footer{
 			font-size: 1rem;
 			color: rgba(0, 0, 0, 0);
 			text-align: end;
-			padding-right: 20px;
+			padding-right: 50px;
 			-webkit-animation: hero-p 1.5s ease forwards;
 					animation: hero-p 1.5s ease forwards;
 		
@@ -868,31 +865,15 @@ footer{
 		}
 	
 		#name-box{
-			display: block;
-			font-size: 1rem;
-			background:rgba(160, 34, 233, 0);
-			color: #ffffff00;
-			width: -webkit-fit-content;
-			width: -moz-fit-content;
-			width: fit-content;
 			padding: 10px;
-			font-weight: 700;
-			margin-left: 50px;
+			font-weight: 400;
+			margin-left: 300px;
+			font-size: .5rem;
 			-webkit-animation: hero-box .5s ease 1.5s forwards;
 					animation: hero-box .5s ease 1.5s forwards;
 		}
-		@keyframes hero-box{
-			0% {font-size:0rem;background:rgba(160, 34, 233, 0);color: #ffffff00; transform: scale(1,0)}
-			100% {font-size:3rem;background:rgb(107, 53, 179);color: #44a9ec;transform: scale(1,1);}
-		}
-		@-webkit-keyframes hero-box{
-			0% {font-size:0rem;background:rgba(160, 34, 233, 0);color: #ffffff00; transform: scale(1,0)}
-			100% {font-size:3rem;background:rgb(107, 53, 179);color: #44a9ec;transform: scale(1,1);}
-		}
 	
 		/*-----letter */
-	
-	
 		#title-hero h1{
 			font-family:'Teko', sans-serif;
 			font-weight: 700;
@@ -903,13 +884,13 @@ footer{
 			overflow: hidden;
 			letter-spacing: 3px;
 			padding:  0;
-			margin: 30px 10px;
+			margin: 100px 60px;
 			-webkit-animation: hero-h1 1s ease-in-out;
-					animation: hero-h1 1s ease-in-out;
+				animation: hero-h1 1s ease-in-out;
 			position: relative;
-		}
-	
-		.letter-1{
+		  }
+		
+		  .letter-1{
 			font-family:'Montserrat', sans-serif;
 			font-weight: 900;
 			position: absolute;
@@ -917,30 +898,30 @@ footer{
 			color: rgb(230, 241, 255);
 			background: rgb(28, 195, 236);
 			font-size: 1.5rem;
-			top:450px;
+			top:560px;
 			-webkit-animation: hero-1 10s ease backwards infinite;
-					animation: hero-1 10s ease backwards infinite;
-	
+				animation: hero-1 10s ease backwards infinite;
+		
 			
-		}
-		@keyframes hero-1{
+		  }
+		  @keyframes hero-1{
 			0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 			20% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-			25% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-			35% {background: rgb(28, 195, 236);color:rgb(255, 255, 255);left:100px; ;}
-			36% {background: rgba(0, 183, 255, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+			25% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:380px;}
+			35% {background: rgb(28, 195, 236);color:rgb(255, 255, 255);left:360px;}
+			36% {background: rgba(0, 183, 255, 0);color: rgba(255, 0, 0, 0); left:220px ;}
 			100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
-		}
-		@-webkit-keyframes hero-1{
+		  }
+		  @-webkit-keyframes hero-1{
 			0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 			20% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-			25% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-			35% {background: rgb(28, 195, 236);color:rgb(255, 255, 255);left:100px; ;}
-			36% {background: rgba(0, 183, 255, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+			25% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:380px;}
+			35% {background: rgb(28, 195, 236);color:rgb(255, 255, 255);left:360px;}
+			36% {background: rgba(0, 183, 255, 0);color: rgba(255, 0, 0, 0); left:220px ;}
 			100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
-		}
-	
-		.letter-2{
+		  }
+		
+		  .letter-2{
 			font-family:'Montserrat', sans-serif;
 			font-weight: 900;
 			position: absolute;
@@ -948,88 +929,85 @@ footer{
 			background: rgb(28, 195, 236);
 			font-size: 2rem;
 			padding: 0.5rem;
-			top:450px;
+			top:560px;
 			-webkit-animation: hero-2 10s ease backwards infinite;
-					animation: hero-2 10s ease backwards infinite;
-		}
-		@keyframes hero-2{
+				animation: hero-2 10s ease backwards infinite;
+		  }
+		  @keyframes hero-2{
 			0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 			37% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-			40% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-			55% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-			56% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+			40% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:380px;}
+			55% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:360px;}
+			56% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:220px ;}
 			100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
-		}
-		@-webkit-keyframes hero-2{
+		  }
+		  @-webkit-keyframes hero-2{
 			0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 			37% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-			40% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-			55% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-			56% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+			40% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:380px;}
+			55% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:360px;}
+			56% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:220px ;}
 			100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
-		}
-	
-		.letter-3{
+		  }
+		
+		  .letter-3{
 			font-family:'Montserrat', sans-serif;
 			font-weight: 900;
 			position: absolute;
 			color: rgba(230, 241, 255, 0);
 			font-size: 2rem;
 			padding: 0.5rem;
-			top:450px;
+			top:560px;
 			-webkit-animation: hero-3 10s ease backwards infinite;
-					animation: hero-3 10s ease backwards infinite;
-		
-		}
-		
-		@keyframes hero-3{
+				animation: hero-3 10s ease backwards infinite;
+		  
+		  }
+		  
+		  @keyframes hero-3{
 			0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 			57% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-			62% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-			77% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-			78% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+			62% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:380px;}
+			77% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:360px;}
+			78% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:220px ;}
 			100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
-		}
-		@-webkit-keyframes hero-3{
+		  }
+		  @-webkit-keyframes hero-3{
 			0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 			57% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-			62% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-			77% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-			78% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+			62% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:380px;}
+			77% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:360px;}
+			78% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:220px ;}
 			100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
-		}
-		
-		.letter-4{
+		  }
+		  
+		  .letter-4{
 			font-family:'Montserrat', sans-serif;
 			font-weight: 900;
 			position: absolute;
 			color: rgba(230, 241, 255, 0);
 			font-size: 2rem;
-			top:450px;
+			top:560px;
 			padding: 0.5rem;
 			-webkit-animation: hero-4 10s ease backwards infinite;
-					animation: hero-4 10s ease backwards infinite;
-		}
-		
-		@keyframes hero-4{
+				animation: hero-4 10s ease backwards infinite;
+		  }
+		  
+		  @keyframes hero-4{
 			0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 			78% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-			83% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-			98% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-			99% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+			83% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:380px;}
+			98% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:360px;}
+			99% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:220px ;}
 			100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
-		}
-		@-webkit-keyframes hero-4{
+		  }
+		  @-webkit-keyframes hero-4{
 			0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 			78% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-			83% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-			98% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-			99% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+			83% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:380px;}
+			98% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:360px;}
+			99% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:220px ;}
 			100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
-		}
-		[id$= -card] {
-			margin: 1px;
-		}
+		  }
 
 		.card-text{
 			font-size: 1.5rem;
@@ -1135,7 +1113,7 @@ footer{
 		-ms-flex-pack: center;
 				justify-content: center;
 		height: auto;
-		margin: 50px;
+		margin: 0px;
 		-webkit-box-flex:0;
 		-ms-flex:0;
 				flex:0;
@@ -1329,7 +1307,7 @@ footer{
 
 
 
-@media screen and (max-width:360px){
+@media screen and (max-width:420px){
 
 	#anav ul{
 		display: none;
@@ -1388,18 +1366,18 @@ footer{
 		width: -moz-fit-content;
 		width: fit-content;
 		padding: 10px;
-		font-weight: 700;
-		margin-left: 50px;
+		font-weight: 400;
+		margin-left: 80px;
 		-webkit-animation: hero-box .5s ease 1.5s forwards;
 		        animation: hero-box .5s ease 1.5s forwards;
 	}
 	@keyframes hero-box{
-		0% {font-size:0rem;background:rgba(160, 34, 233, 0);color: #ffffff00; transform: scale(1,0)}
-		100% {font-size:3rem;background:rgb(107, 53, 179);color: #44a9ec;transform: scale(1,1);}
+		0% {background:rgba(160, 34, 233, 0);color: #ffffff00; transform: scale(1,0)}
+		100% {background:rgb(107, 53, 179);color: #44a9ec;transform: scale(1,1);}
 	}
 	@-webkit-keyframes hero-box{
-		0% {font-size:0rem;background:rgba(160, 34, 233, 0);color: #ffffff00; transform: scale(1,0)}
-		100% {font-size:3rem;background:rgb(107, 53, 179);color: #44a9ec;transform: scale(1,1);}
+		0% {background:rgba(160, 34, 233, 0);color: #ffffff00; transform: scale(1,0)}
+		100% {background:rgb(107, 53, 179);color: #44a9ec;transform: scale(1,1);}
 	}
 
 	/*-----letter */
@@ -1415,7 +1393,7 @@ footer{
 		overflow: hidden;
 		letter-spacing: 3px;
 		padding:  0;
-		margin: 30px 10px;
+		margin: 60px 10px 30px 30px;
 		-webkit-animation: hero-h1 1s ease-in-out;
 				animation: hero-h1 1s ease-in-out;
 		position: relative;
@@ -1429,7 +1407,7 @@ footer{
 		color: rgb(230, 241, 255);
 		background: rgb(28, 195, 236);
 		font-size: 1.5rem;
-        top:450px;
+        top:430px;
 		-webkit-animation: hero-1 10s ease backwards infinite;
 				animation: hero-1 10s ease backwards infinite;
 
@@ -1438,17 +1416,17 @@ footer{
 	@keyframes hero-1{
 		0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 		20% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-		25% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-		35% {background: rgb(28, 195, 236);color:rgb(255, 255, 255);left:100px; ;}
-		36% {background: rgba(0, 183, 255, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+		25% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:160px;}
+		35% {background: rgb(28, 195, 236);color:rgb(255, 255, 255);left:140px;}
+		36% {background: rgba(0, 183, 255, 0);color: rgba(255, 0, 0, 0); left:180px ;}
 		100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
 	}
 	@-webkit-keyframes hero-1{
 		0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 		20% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-		25% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-		35% {background: rgb(28, 195, 236);color:rgb(255, 255, 255);left:100px; ;}
-		36% {background: rgba(0, 183, 255, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+		25% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:160px;}
+		35% {background: rgb(28, 195, 236);color:rgb(255, 255, 255);left:140px;}
+		36% {background: rgba(0, 183, 255, 0);color: rgba(255, 0, 0, 0); left:180px ;}
 		100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
 	}
 
@@ -1460,24 +1438,24 @@ footer{
 		background: rgb(28, 195, 236);
 		font-size: 2rem;
 		padding: 0.5rem;
-		top:450px;
+		top:430px;
 		-webkit-animation: hero-2 10s ease backwards infinite;
 				animation: hero-2 10s ease backwards infinite;
 	}
 	@keyframes hero-2{
 		0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 		37% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-		40% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-		55% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-		56% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+		40% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:160px;}
+		55% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:140px;}
+		56% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:180px ;}
 		100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
 	}
 	@-webkit-keyframes hero-2{
 		0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 		37% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-		40% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-		55% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-		56% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+		40% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:160px;}
+		55% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:140px;}
+		56% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:180px ;}
 		100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
 	}
 
@@ -1488,7 +1466,7 @@ footer{
 		color: rgba(230, 241, 255, 0);
 		font-size: 2rem;
 		padding: 0.5rem;
-		top:450px;
+		top:430px;
 		-webkit-animation: hero-3 10s ease backwards infinite;
 				animation: hero-3 10s ease backwards infinite;
 	
@@ -1497,17 +1475,17 @@ footer{
 	@keyframes hero-3{
 		0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 		57% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-		62% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-		77% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-		78% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+		62% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:160px;}
+		77% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:140px;}
+		78% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:180px ;}
 		100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
 	}
 	@-webkit-keyframes hero-3{
 		0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 		57% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-		62% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-		77% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-		78% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+		62% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:160px;}
+		77% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:140px;}
+		78% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:180px ;}
 		100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
 	}
 	
@@ -1517,7 +1495,7 @@ footer{
 		position: absolute;
 		color: rgba(230, 241, 255, 0);
 		font-size: 2rem;
-		top:450px;
+		top:430px;
 		padding: 0.5rem;
 		-webkit-animation: hero-4 10s ease backwards infinite;
 		        animation: hero-4 10s ease backwards infinite;
@@ -1526,22 +1504,20 @@ footer{
 	@keyframes hero-4{
 		0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 		78% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-		83% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-		98% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-		99% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+		83% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:160px;}
+		98% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:140px;}
+		99% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:180px ;}
 		100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
 	}
 	@-webkit-keyframes hero-4{
 		0% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
 		78% {background: rgba(28, 195, 236, 0); color: rgba(255, 0, 0, 0); left: 80px;}
-		83% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:110px;;}
-		98% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:100px; ;}
-		99% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:110px; ;}
+		83% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:160px;}
+		98% {background: rgb(28, 195, 236);color:rgb(255, 255, 255); left:140px;}
+		99% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left:180px ;}
 		100% {background: rgba(28, 195, 236, 0);color: rgba(255, 0, 0, 0); left: 0 ;}
 	}
-	[id$= -card] {
-		margin: 10px;
-	}
+	
 
 	.card-text{
 		font-size: 1.5rem;
@@ -1613,7 +1589,17 @@ main{
 	-ms-flex:0;
 	        flex:0;
 }
+#article{
 
+	margin: 10px;
+
+}
+#gameart-section #article{
+	margin: 10px;
+}
+#graphic-section #article{
+	margin: 10px;
+}
 
 #ui-section>.portfolio-whole{
 	display: -webkit-box;
@@ -1707,7 +1693,7 @@ main{
 	-ms-flex-align: center;
 	        align-items: center;
     width: 100%;
-    margin: 0;
+    margin: 30px 0 0 0;
     padding: 0;
     text-align: center;
 }
